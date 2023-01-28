@@ -1,7 +1,2 @@
 .DS_Store
-!custom-scripts/pre-backup/.exist
-!custom-scripts/post-backup/.exist
-!custom-scripts/pre-restore/.exist
-!custom-scripts/pre-backup/.exist
-!custom-scripts/manual/.exist
-custom-scripts
+custom-scripts/
