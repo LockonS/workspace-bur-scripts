@@ -27,8 +27,14 @@ copy-dir $BACKUP_DIR_CLI/ssh/ $HOME/.ssh/
 # gitconfig
 copy-file $BACKUP_DIR_CLI/gitconfig $HOME/.gitconfig
 
+# npmrc
+copy-file $BACKUP_DIR_CLI/npmrc $HOME/.npmrc
+
 # aws
 copy-dir $BACKUP_DIR_CLI/aws/ $HOME/.aws/
+
+# pip
+copy-dir $BACKUP_DIR_CLI/config/pip/ $HOME/.config/pip/
 
 # ossutil
 copy-file $BACKUP_DIR_CLI/ossutilconfig $HOME/.ossutilconfig
