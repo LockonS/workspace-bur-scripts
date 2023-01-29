@@ -18,6 +18,7 @@ copy-dir $BACKUP_DIR_CLI/vim/bundle/ $HOME/.vim/bundle/
 # zshrc and oh-my-zsh
 copy-file $BACKUP_DIR_CLI/zshrc $HOME/.zshrc
 copy-dir $BACKUP_DIR_CLI/oh-my-zsh/ $HOME/.oh-my-zsh/
+copy-dir $BACKUP_DIR_CLI/zfunc/ $HOME/.zfunc/
 # backup zprofile for a reference, do not restore by default
 # copy-file $BACKUP_DIR_CLI/zprofile $HOME/.zprofile 
 
