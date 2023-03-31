@@ -72,7 +72,19 @@ copy-dir(){
 
 # stdout output with custom format and indent to be used in custom scripts
 sub-echo(){
-	echo "${LINE_INDENT}${BIWhite}${PHASE_FILE_NAME}${NC}: $@"
+    local MSG_STR=$@
+	local OPTION=()
+	if [[ $# -gt 0 ]]; then
+		for PARAM in "$@"
+		do
+			if [[ $PARAM = -* ]]; then
+				OPTION+=($PARAM)
+			else
+				MSG_STR=$PARAM
+			fi
+		done
+	fi
+	echo $OPTION "${LINE_INDENT}${BIWhite}${PHASE_FILE_NAME}${NC}: $MSG_STR"	
 }
 
 # load custom phase scripts
