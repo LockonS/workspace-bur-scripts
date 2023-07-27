@@ -37,6 +37,9 @@ copy-dir $HOME/.aws/ $BACKUP_DIR_CLI/aws/
 # pip
 copy-dir $HOME/.config/pip/ $BACKUP_DIR_CLI/config/pip/
 
+# podman
+copy-dir $HOME/.config/containers/ $BACKUP_DIR_CLI/config/containers/
+
 # ossutil
 copy-file $HOME/.ossutilconfig $BACKUP_DIR_CLI/ossutilconfig
 
