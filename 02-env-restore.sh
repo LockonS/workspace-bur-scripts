@@ -25,6 +25,9 @@ copy-dir $BACKUP_DIR_CLI/zfunc/ $HOME/.zfunc/
 # ssh
 copy-dir $BACKUP_DIR_CLI/ssh/ $HOME/.ssh/
 
+# gpg
+copy-dir $BACKUP_DIR_CLI/gnupg/ $HOME/.gnupg/
+
 # gitconfig
 copy-file $BACKUP_DIR_CLI/gitconfig $HOME/.gitconfig
 
@@ -56,3 +59,4 @@ fi
 
 # load custom post-restore scripts
 trigger-phase-script "post-restore"
+
