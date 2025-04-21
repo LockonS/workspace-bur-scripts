@@ -25,9 +25,6 @@ copy-file $HOME/.zprofile $BACKUP_DIR_CLI/zprofile
 # ssh
 copy-dir $HOME/.ssh/ $BACKUP_DIR_CLI/ssh/
 
-# gpg
-copy-dir $HOME/.gnupg/ $BACKUP_DIR_CLI/gnupg/
-
 # gitconfig
 copy-file $HOME/.gitconfig $BACKUP_DIR_CLI/gitconfig
 
